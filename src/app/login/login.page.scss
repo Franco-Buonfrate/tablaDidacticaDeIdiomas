@@ -1,0 +1,37 @@
+ion-content{
+    --background: url(../../assets/50964646498e7cdd4452dfbda1bb0eee.png) no-repeat center/cover fixed;
+}
+
+*{
+    font-weight: bold;
+}
+
+.login-form{
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+}
+
+
+.password-input, .email-input{
+    border: 1px solid #00A7E1;
+    border-radius: 6px ;
+    background-color: #007EA7;
+    color: #00171F;
+}
+
+.submit-button{
+    --background : #003459;
+}
+
+.users-buttons
+{
+    width: 90%;
+    display: flex;
+    margin: 30px auto;
+    flex-direction: column;
+    justify-content: center;
+}

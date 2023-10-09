@@ -1,0 +1,21 @@
+  <ion-content  [fullscreen]="true">
+  <form [formGroup]="formularioLogin" class="login-form">
+    <ion-label style="color:#111">
+      Direccion de correo
+      <ion-input formControlName="email"  class="email-input" type="mail" placeholder="ejem@ejem.com"></ion-input>
+    </ion-label>
+    <ion-label style="color:#111">
+      Contraseña
+      <ion-input formControlName="password" class="password-input" type="password" placeholder=""></ion-input>
+    </ion-label>
+    <ion-button class="submit-button" type="submit" (click)="login()">Ingresar</ion-button>
+
+  </form>
+  <div class="users-buttons" >
+    <ion-button style="--background:#3B429F" (click)="hardcode(0)">Administrador</ion-button>
+    <ion-button style="--background:#AA7DCE" (click)="hardcode(1)">Invitado</ion-button>
+    <ion-button style="--background:#F4A5AE" (click)="hardcode(2)">Usuario</ion-button>
+  </div>
+
+  <img src="../../assets/giphy.gif" alt="">
+</ion-content>

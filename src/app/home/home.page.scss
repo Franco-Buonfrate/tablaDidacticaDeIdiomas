@@ -1,0 +1,178 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+#ionFabPricipal {
+  --background: #b7f399;
+  --background-activated: #87d361;
+  --background-hover: #a3e681;
+  --border-radius: 15px;
+  --box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+  --color: black;
+}
+
+ion-content{
+  --background: url(../../assets/50964646498e7cdd4452dfbda1bb0eee.png) no-repeat center/cover fixed;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.botonSalir {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%, -50%);
+  color: black;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+//content
+.contenido {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  overflow: visible;
+}
+
+.backAnimal {
+  background-color: #46464600;
+  background-blend-mode: overlay;
+  opacity: 1;
+  background-image: url('/assets/background/backanimales.jfif');
+  background-size: cover;
+}
+
+.backColor {
+  background-color: #46464600;
+  background-blend-mode: overlay;
+  opacity: 1;
+  background-image: url('/assets/background/backcolores.jpg');
+  background-size: cover;
+}
+
+.backNumero {
+  background-color:#46464600;
+  background-blend-mode: overlay;
+  opacity: 1;
+  background-image: url('/assets/background/backnumeros.jfif');
+  background-size: cover;
+}
+
+.columna {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//BOTON
+.boton-tabla {
+  width: 100%;
+  height: 100%;
+  --background: transparent;
+  --color: rgba(255, 255, 255, 0);
+  --border-radius: 0;
+  transition: background-color -3s ease-out;
+  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0);
+}
+
+.boton-tabla:active {
+  background-color: rgba(0, 0, 0, 0.664);
+  border-color: rgba(0, 0, 0, 0.568);
+}
+
+//IMAGENES
+.imagen-boton {
+  width: 100px;
+  height: 100px;
+}
+
+//SPINNER
+.spinner {
+  transform: translateX(0%);
+  z-index: 1;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.custom-spinner {
+  zoom:4;
+}
+
+//goodbye
+ion-loading {
+  --inner-padding: 0;
+ z-index: 10;
+  --spinner-margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gifbye {
+  width: 230px; // Ajusta este valor para cambiar
+}

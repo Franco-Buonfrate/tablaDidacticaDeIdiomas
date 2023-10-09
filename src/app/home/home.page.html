@@ -1,0 +1,136 @@
+
+<ion-content [fullscreen]="true">
+  <ion-fab slot="fixed" horizontal="end" vertical="bottom">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+
+    <ion-fab-list side="top">
+      <ion-fab-button (click)="cambiarIdiomaElegido('', 'ing')">
+        <img src="../../assets/idiomas/ing.png">
+      </ion-fab-button>
+      <ion-fab-button (click)="cambiarIdiomaElegido('', 'por')">
+        <img src="../../assets/idiomas/por.png">
+      </ion-fab-button>
+      <ion-fab-button (click)="cambiarIdiomaElegido('', 'esp')">
+        <img src="../../assets/idiomas/arg.png">
+      </ion-fab-button>
+    </ion-fab-list>
+
+
+    <ion-fab-list side="start">
+      <ion-fab-button style="--background: white" (click)="cambiarTemaElegido('','animales')">
+        <img src="../../assets/temas/animales.png" >
+      </ion-fab-button>
+      <ion-fab-button style="--background: white" (click)="cambiarTemaElegido('','colores')">
+        <img src="../../assets/temas/colores.png">
+      </ion-fab-button>
+      <ion-fab-button>
+        <img src="../../assets/temas/numeros.png" (click)="cambiarTemaElegido('','numeros')">
+      </ion-fab-button>
+    </ion-fab-list>
+    
+  </ion-fab>
+
+    <!-- animales -->
+    <div class="contenido backAnimal" *ngIf="tema==='animales'">
+      <div class="columna">
+        <ion-button class="boton-tabla" (click)='generarSonido("perro.mp3")'>
+          <img class="imagen-boton" src='../../assets/animales/perro.png'>
+        </ion-button>
+      </div>
+      <div class="columna">
+        <ion-button class="boton-tabla" (click)='generarSonido("gato.mp3")'>
+          <img class="imagen-boton" src='../../assets/animales/gato.png'>
+        </ion-button>
+      </div>
+      <div class="columna">
+        <ion-button class="boton-tabla" (click)='generarSonido("mono.mp3")'>
+          <img class="imagen-boton" src='../../assets/animales/mono.png'>
+        </ion-button>
+      </div>
+      <div class="columna">
+        <ion-button class="boton-tabla boton4" (click)='generarSonido("jirafa.mp3")'>
+          <img class="imagen-boton" src='../../assets/animales/jirafa.png'>
+        </ion-button>
+      </div>
+      <div class="columna">
+        <ion-button class="boton-tabla boton5" (click)='generarSonido("elefante.mp3")'>
+          <img class="imagen-boton" src='../../assets/animales/elefante.png'>
+        </ion-button>
+      </div>
+      <div class="columna">
+        <ion-button class="boton-tabla boton6" (click)='generarSonido("cerdo.mp3")'>
+          <img class="imagen-boton" src='../../assets/animales/cerdo.png'>
+        </ion-button>
+      </div>
+    </div>
+
+<!-- COLORES -->
+    <div class="contenido backColor" *ngIf="tema==='colores'">
+      <div class="columna">
+        <ion-button class="boton-tabla" (click)='generarSonido("rojo.mp3")'>
+          <img class="imagen-boton" src='../../assets/colores/rojo.png'>
+        </ion-button>
+      </div>
+      <div class="columna">
+        <ion-button class="boton-tabla" (click)='generarSonido("azul.mp3")'>
+          <img class="imagen-boton" src='../../assets/colores/azul.png'>
+        </ion-button>
+      </div>
+      <div class="columna">
+        <ion-button class="boton-tabla" (click)='generarSonido("amarillo.mp3")'>
+          <img class="imagen-boton" src='../../assets/colores/amarillo.png'>
+        </ion-button>
+      </div>
+      <div class="columna">
+        <ion-button class="boton-tabla" (click)='generarSonido("naranja.mp3")'>
+          <img class="imagen-boton" src='../../assets/colores/naranja.png'>
+        </ion-button>
+      </div>
+      <div class="columna">
+        <ion-button class="boton-tabla" (click)='generarSonido("verde.mp3")'>
+          <img class="imagen-boton" src='../../assets/colores/verde.png'>
+        </ion-button>
+      </div>
+      <div class="columna">
+        <ion-button class="boton-tabla" (click)='generarSonido("violeta.mp3")'>
+          <img class="imagen-boton" src='../../assets/colores/violeta.png'>
+        </ion-button>
+      </div>
+    </div>
+
+    <!-- NUMEROS -->
+  <div class="contenido backNumero" *ngIf="tema==='numeros'">
+    <div class="columna">
+      <ion-button class="boton-tabla" (click)='generarSonido("uno.mp3")'>
+        <img class="imagen-boton" src='../../assets/numeros/1.png'>
+      </ion-button>
+    </div>
+    <div class="columna">
+      <ion-button class="boton-tabla" (click)='generarSonido("dos.mp3")'>
+        <img class="imagen-boton" src='../../assets/numeros/2.png'>
+      </ion-button>
+    </div>
+    <div class="columna">
+      <ion-button class="boton-tabla" (click)='generarSonido("tres.mp3")'>
+        <img class="imagen-boton" src='../../assets/numeros/3.png'>
+      </ion-button>
+    </div>
+    <div class="columna">
+      <ion-button class="boton-tabla" (click)='generarSonido("cuatro.mp3")'>
+        <img class="imagen-boton" src='../../assets/numeros/4.png'>
+      </ion-button>
+    </div>
+    <div class="columna">
+      <ion-button class="boton-tabla" (click)='generarSonido("cinco.mp3")'>
+        <img class="imagen-boton" src='../../assets/numeros/5.png'>
+      </ion-button>
+    </div>
+    <div class="columna">
+      <ion-button class="boton-tabla" (click)='generarSonido("seis.mp3")'>
+        <img class="imagen-boton" src='../../assets/numeros/6.png'>
+      </ion-button>
+    </div>
+  </div>
+</ion-content>
